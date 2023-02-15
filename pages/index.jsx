@@ -1,4 +1,4 @@
-import styles from '@/styles/Home.module.css'
+import styles from '../styles/Home.module.css'
 import { Table } from 'react-bootstrap';
 import Link from 'next/link';
 export default function Home( { users }) {

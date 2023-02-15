@@ -1,11 +1,11 @@
-import styles from '@/styles/Home.module.css'
-import FormComponent from '@/components/Form';
+import styles from 'styles/Home.module.css'
+import FormComponent from '../../components/Form';
 
 export default function CreateUser( { sectors }) {
 
   return (
     <main className={styles.main}>
-      <h2>Transport Sector Test</h2>
+      <h2>Create User</h2>
       <FormComponent sectors={sectors} />
     </main>
   )

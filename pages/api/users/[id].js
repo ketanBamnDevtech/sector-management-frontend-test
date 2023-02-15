@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import connectDB from "../../../lib/mongodb";
-import User from "../../models/user";
+import User from "../../../models/user";
 
 const handler = async (req, res) => {
   const { query, method, body } = req;

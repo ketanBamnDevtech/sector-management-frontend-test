@@ -1,6 +1,6 @@
 import mongoose from "mongoose";
 import connectDB from "../../../lib/mongodb";
-import User from "../../models/user";
+import User from "../../../models/user";
 
 const handler = async (req, res) => {
   const { method } = req;
@@ -10,7 +10,7 @@ const handler = async (req, res) => {
       const users = await User
       .aggregate()
       .lookup({ from: 'sectors', localField: 'sector_ids', foreignField: '_id', as: 'related_sectors'})
-      res.status(200).json( users);
+      res.status(200).json(users);
       break;
     case 'POST':
       const { user: { name, sector_ids, terms } } = req.body;

@@ -1,5 +1,5 @@
 import connectDB from "../../../lib/mongodb";
-import Sector from "../../models/sector";
+import Sector from "../../../models/sector";
 
 const handler = async (req, res) => {
   const { method } = req;

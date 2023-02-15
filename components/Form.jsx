@@ -71,7 +71,6 @@ const FormComponent = ({ sectors, user = undefined }) =>  {
     if (!listedSectors.find(sec => sec._id === sector._id)) {
       listedSectors.push(sector);
       options.push(<option value={sector._id} name={sector._id} 
-        selected={user && user?.sector_ids?.includes(sector._id)} key={sector._id} 
         style={{ marginLeft: parseInt(sector.level)*20}}>{sector.name}</option>);
       const children = sectors.filter(sec => sec.parent_id === sector._id);
       children.map(child => renderSectors(child))
@@ -96,7 +95,7 @@ const FormComponent = ({ sectors, user = undefined }) =>  {
       <Form.Group>
         <Form.Label htmlFor="sector">Sectors:</Form.Label>
         <InputGroup hasValidation>
-          <Form.Select multiple aria-label="sectors-selector" name="sectors" required>
+          <Form.Select multiple aria-label="sectors-selector" name="sectors" defaultValue={user?.sector_ids} required>
             {rootSectors?.map(sector => 
                 renderSectors(sector)
             )}
