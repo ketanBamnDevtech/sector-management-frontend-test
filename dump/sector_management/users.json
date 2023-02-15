@@ -1,0 +1,114 @@
+[{
+  "_id": {
+    "$oid": "63eba539dbc8d26c13d769c1"
+  },
+  "name": "new user 1",
+  "terms": true,
+  "sector_ids": [
+    {
+      "$oid": "63ec6576218bddb9085fe716"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe717"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe716"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe717"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe716"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe717"
+    }
+  ]
+},{
+  "_id": {
+    "$oid": "63eca9f32e1bf77b35e012aa"
+  },
+  "name": "new apa",
+  "sector_ids": [
+    {
+      "$oid": "63eb492f8e0094992a819510"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe716"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe717"
+    }
+  ],
+  "terms": true
+},{
+  "_id": {
+    "$oid": "63ecaa3f2e1bf77b35e012ab"
+  },
+  "name": "new sector",
+  "sector_ids": [
+    {
+      "$oid": "63eb492f8e0094992a819510"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe716"
+    }
+  ],
+  "terms": true
+},{
+  "_id": {
+    "$oid": "63ecce946a9ffe19955cfd15"
+  },
+  "name": "new sector",
+  "sector_ids": [
+    {
+      "$oid": "63ec6576218bddb9085fe718"
+    }
+  ],
+  "terms": true
+},{
+  "_id": {
+    "$oid": "63ece3786a9ffe19955cfd16"
+  },
+  "name": "my user",
+  "sector_ids": [
+    {
+      "$oid": "63ec6576218bddb9085fe71f"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe721"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe72b"
+    }
+  ],
+  "terms": true
+},{
+  "_id": {
+    "$oid": "63ece45b6a9ffe19955cfd17"
+  },
+  "name": "testing",
+  "sector_ids": [
+    {
+      "$oid": "63eb492f8e0094992a819510"
+    }
+  ],
+  "terms": true
+},{
+  "_id": {
+    "$oid": "63ed2252a2c8b13193bbadcb"
+  },
+  "name": "new user for testing",
+  "sector_ids": [
+    {
+      "$oid": "63ec6576218bddb9085fe716"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe717"
+    },
+    {
+      "$oid": "63ec6576218bddb9085fe718"
+    }
+  ],
+  "terms": true
+}]

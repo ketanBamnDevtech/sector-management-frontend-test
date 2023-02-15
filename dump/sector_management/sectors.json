@@ -1,0 +1,719 @@
+[{
+  "_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  },
+  "name": "Manufacturing",
+  "parent_id": {
+    "$oid": "000000000000000000000000"
+  },
+  "level": 0
+},{
+  "_id": {
+    "$oid": "63eb492f8e0094992a819510"
+  },
+  "name": "Food and Beverage",
+  "parent_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  },
+  "level": 1
+},{
+  "_id": {
+    "$oid": "63eb49438e0094992a819511"
+  },
+  "name": "Furniture",
+  "parent_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  },
+  "level": 1
+},{
+  "_id": {
+    "$oid": "63eb496a8e0094992a819512"
+  },
+  "name": "Service",
+  "parent_id": {
+    "$oid": "000000000000000000000000"
+  },
+  "level": 0
+},{
+  "_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "name": "Machinery",
+  "parent_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  },
+  "level": 1
+},{
+  "_id": {
+    "$oid": "63eb49c18e0094992a819514"
+  },
+  "name": "Metalworking",
+  "parent_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  }
+},{
+  "_id": {
+    "$oid": "63eb49da8e0094992a819515"
+  },
+  "name": "Plastic and Rubber",
+  "parent_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  },
+  "level": 1
+},{
+  "_id": {
+    "$oid": "63eb49fc8e0094992a819517"
+  },
+  "name": "Printing",
+  "parent_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  },
+  "level": 1
+},{
+  "_id": {
+    "$oid": "63eb4a428e0094992a819518"
+  },
+  "name": "Textile and Clothing",
+  "parent_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  },
+  "level": 1
+},{
+  "_id": {
+    "$oid": "63eb4a518e0094992a819519"
+  },
+  "name": "Wood",
+  "parent_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  },
+  "level": 1
+},{
+  "_id": {
+    "$oid": "63eb4aa88e0094992a81951a"
+  },
+  "name": "Other",
+  "parent_id": {
+    "$oid": "000000000000000000000000"
+  },
+  "level": 0
+},{
+  "_id": {
+    "$oid": "63ec3119d6319198de15e1a0"
+  },
+  "name": "Metal works",
+  "parent_id": {
+    "$oid": "63eb49c18e0094992a819514"
+  },
+  "level": "2"
+},{
+  "_id": {
+    "$oid": "63ec31cad6319198de15e1a1"
+  },
+  "name": "Plastic processing technology",
+  "parent_id": {
+    "$oid": "63eb49da8e0094992a819515"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec32d9d6319198de15e1a3"
+  },
+  "parent_id": {
+    "$oid": "63ec66019359b5bf31bc48bc"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec3355d6319198de15e1a4"
+  },
+  "name": "Transport and Logistics",
+  "parent_id": {
+    "$oid": "63eb496a8e0094992a819512"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe716"
+  },
+  "name": "Other",
+  "parent_id": {
+    "$oid": "63eb492f8e0094992a819510"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe717"
+  },
+  "name": "Meat & meat products",
+  "parent_id": {
+    "$oid": "63eb492f8e0094992a819510"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe718"
+  },
+  "name": "Sweets & snack food",
+  "parent_id": {
+    "$oid": "63eb492f8e0094992a819510"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe719"
+  },
+  "name": "Beverages",
+  "parent_id": {
+    "$oid": "63eb492f8e0094992a819510"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe71a"
+  },
+  "name": "Bathroom/sauna",
+  "parent_id": {
+    "$oid": "63eb49438e0094992a819511"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe71b"
+  },
+  "name": "Milk & dairy products",
+  "parent_id": {
+    "$oid": "63eb492f8e0094992a819510"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe71c"
+  },
+  "name": "Bedroom",
+  "parent_id": {
+    "$oid": "63eb49438e0094992a819511"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe71d"
+  },
+  "name": "Childrenâ€™s room",
+  "parent_id": {
+    "$oid": "63eb49438e0094992a819511"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe71e"
+  },
+  "name": "Kitchen",
+  "parent_id": {
+    "$oid": "63eb49438e0094992a819511"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe71f"
+  },
+  "name": "Living room",
+  "parent_id": {
+    "$oid": "63eb49438e0094992a819511"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe720"
+  },
+  "name": "Fish & fish products",
+  "parent_id": {
+    "$oid": "63eb492f8e0094992a819510"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe721"
+  },
+  "name": "Other (Furniture)",
+  "parent_id": {
+    "$oid": "63eb49438e0094992a819511"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe722"
+  },
+  "name": "Office",
+  "parent_id": {
+    "$oid": "63eb49438e0094992a819511"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe723"
+  },
+  "name": "Outdoor",
+  "parent_id": {
+    "$oid": "63eb49438e0094992a819511"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe724"
+  },
+  "name": "Maritime",
+  "parent_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe725"
+  },
+  "name": "Bakery & confectionery products",
+  "parent_id": {
+    "$oid": "63ec67459359b5bf31bc48bd"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe726"
+  },
+  "name": "Electronics and Optics",
+  "parent_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  },
+  "level": 1
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe727"
+  },
+  "name": "Aluminium and steel workboats",
+  "parent_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe728"
+  },
+  "name": "Boat/Yacht building",
+  "parent_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe729"
+  },
+  "name": "Metal structures",
+  "parent_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe72a"
+  },
+  "name": "Ship repair and conversion",
+  "parent_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe72b"
+  },
+  "name": "Project furniture",
+  "parent_id": {
+    "$oid": "63eb49438e0094992a819511"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe72c"
+  },
+  "name": "Other",
+  "parent_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe72d"
+  },
+  "name": "Repair and maintenance service",
+  "parent_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe72e"
+  },
+  "name": "Machinery components",
+  "parent_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe72f"
+  },
+  "name": "Machinery equipment/tools",
+  "parent_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe730"
+  },
+  "name": "Manufacture of machinery",
+  "parent_id": {
+    "$oid": "63eb49878e0094992a819513"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe731"
+  },
+  "name": "Houses and buildings",
+  "parent_id": {
+    "$oid": "63eb49c18e0094992a819514"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe732"
+  },
+  "name": "Construction of metal structures",
+  "parent_id": {
+    "$oid": "63eb49c18e0094992a819514"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe733"
+  },
+  "name": "Metal products",
+  "parent_id": {
+    "$oid": "63eb49c18e0094992a819514"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe734"
+  },
+  "name": "CNC-machining",
+  "parent_id": {
+    "$oid": "63ec3119d6319198de15e1a0"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe735"
+  },
+  "name": "Forgings, Fasteners",
+  "parent_id": {
+    "$oid": "63ec3119d6319198de15e1a0"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe736"
+  },
+  "name": "Gas, Plasma, Laser cutting",
+  "parent_id": {
+    "$oid": "63ec3119d6319198de15e1a0"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe737"
+  },
+  "name": "Construction materials",
+  "parent_id": {
+    "$oid": "63eb484f8e0094992a81950f"
+  },
+  "level": 1
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe738"
+  },
+  "name": "Packaging",
+  "parent_id": {
+    "$oid": "63eb49da8e0094992a819515"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe739"
+  },
+  "name": "MIG, TIG, Aluminum welding",
+  "parent_id": {
+    "$oid": "63ec3119d6319198de15e1a0"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe73a"
+  },
+  "name": "Book/Periodicals printing",
+  "parent_id": {
+    "$oid": "63eb49fc8e0094992a819517"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe73b"
+  },
+  "name": "Advertising",
+  "parent_id": {
+    "$oid": "63eb49fc8e0094992a819517"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe73c"
+  },
+  "name": "Labelling and packaging printing",
+  "parent_id": {
+    "$oid": "63eb49fc8e0094992a819517"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe73d"
+  },
+  "name": "Blowing",
+  "parent_id": {
+    "$oid": "63ec31cad6319198de15e1a1"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe73e"
+  },
+  "name": "Clothing",
+  "parent_id": {
+    "$oid": "63eb4a428e0094992a819518"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe73f"
+  },
+  "name": "Plastic profiles",
+  "parent_id": {
+    "$oid": "63eb49da8e0094992a819515"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe740"
+  },
+  "name": "Moulding",
+  "parent_id": {
+    "$oid": "63ec31cad6319198de15e1a1"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe741"
+  },
+  "name": "Textile",
+  "parent_id": {
+    "$oid": "63eb4a428e0094992a819518"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe742"
+  },
+  "name": "Plastics welding and processing",
+  "parent_id": {
+    "$oid": "63ec31cad6319198de15e1a1"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe743"
+  },
+  "name": "Wooden houses",
+  "parent_id": {
+    "$oid": "63eb4a518e0094992a819519"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe744"
+  },
+  "name": "Plastic goods",
+  "parent_id": {
+    "$oid": "63eb49da8e0094992a819515"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe745"
+  },
+  "name": "Wooden building materials",
+  "parent_id": {
+    "$oid": "63eb4a518e0094992a819519"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe746"
+  },
+  "name": "Creative industries",
+  "parent_id": {
+    "$oid": "63eb4aa88e0094992a81951a"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe747"
+  },
+  "name": "Other (Wood)",
+  "parent_id": {
+    "$oid": "63eb4a518e0094992a819519"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe748"
+  },
+  "name": "Energy technology",
+  "parent_id": {
+    "$oid": "63eb4aa88e0094992a81951a"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe749"
+  },
+  "name": "Engineering",
+  "parent_id": {
+    "$oid": "63eb496a8e0094992a819512"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe74a"
+  },
+  "name": "Business services",
+  "parent_id": {
+    "$oid": "63eb496a8e0094992a819512"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe74b"
+  },
+  "name": "Environment",
+  "parent_id": {
+    "$oid": "63eb4aa88e0094992a81951a"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe74c"
+  },
+  "name": "Data processing, Web portals, E-marketing",
+  "parent_id": {
+    "$oid": "63ec32d9d6319198de15e1a3"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe74d"
+  },
+  "name": "Telecommunications",
+  "parent_id": {
+    "$oid": "63ec32d9d6319198de15e1a3"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe74e"
+  },
+  "name": "Translation services",
+  "parent_id": {
+    "$oid": "63eb496a8e0094992a819512"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe74f"
+  },
+  "name": "Software, Hardware",
+  "parent_id": {
+    "$oid": "63ec32d9d6319198de15e1a3"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe750"
+  },
+  "name": "Transport and Logistics",
+  "parent_id": {
+    "$oid": "63eb496a8e0094992a819512"
+  },
+  "level": 2
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe751"
+  },
+  "name": "Rail",
+  "parent_id": {
+    "$oid": "63ec3355d6319198de15e1a4"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe752"
+  },
+  "name": "Air",
+  "parent_id": {
+    "$oid": "63ec3355d6319198de15e1a4"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe753"
+  },
+  "name": "Road",
+  "parent_id": {
+    "$oid": "63ec3355d6319198de15e1a4"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe754"
+  },
+  "name": "Water",
+  "parent_id": {
+    "$oid": "63ec3355d6319198de15e1a4"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe755"
+  },
+  "name": "Programming, Consultancy",
+  "parent_id": {
+    "$oid": "63ec32d9d6319198de15e1a3"
+  },
+  "level": 3
+},{
+  "_id": {
+    "$oid": "63ec6576218bddb9085fe756"
+  },
+  "name": "Tourism",
+  "parent_id": {
+    "$oid": "63eb496a8e0094992a819512"
+  },
+  "level": 2
+}]
