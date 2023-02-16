@@ -1,6 +1,6 @@
-import mongoose from "mongoose";
 import connectDB from "../../../lib/mongodb";
 import User from "../../../models/user";
+import { withIronSessionApiRoute } from "iron-session/next";
 
 const handler = async (req, res) => {
   const { query, method, body } = req;
@@ -22,5 +22,11 @@ const handler = async (req, res) => {
   }
 }
 
-export default connectDB(handler);
+export default withIronSessionApiRoute(connectDB(handler), {
+  cookieName: "myapp_cookiename",
+  password: "complex_password_at_least_32_characters_long",
+  cookieOptions: {
+    secure: process.env.NODE_ENV === "production",
+  },
+});
 

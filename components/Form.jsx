@@ -2,12 +2,14 @@ import { useEffect, useRef, useState } from 'react';
 import { Alert, InputGroup } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import useUser from '../lib/hooks/useUser';
 import Router from 'next/router'
 
 const FormComponent = ({ sectors, user = undefined }) =>  {
   const [message, setMessage] = useState(null);
   const [show, setShow] = useState(false);
   const [validated, setValidated] = useState(false);
+  const { mutateUser } = useUser();
 
   const formRef = useRef(null);
   const listedSectors = [];
@@ -45,13 +47,14 @@ const FormComponent = ({ sectors, user = undefined }) =>  {
   }
 
   const createUser = async (userObj) => {
-    const response = await fetch('/api/users', { method: 'POST', 
+    let response; 
+    mutateUser(response = await fetch('/api/users', { method: 'POST', 
       body: JSON.stringify({ user: userObj }), 
       headers: {
         "Content-Type": 
         "application/json",
       },
-    });
+    }));
     return response
   }
 
@@ -70,7 +73,7 @@ const FormComponent = ({ sectors, user = undefined }) =>  {
   const renderSectors = (sector) => {
     if (!listedSectors.find(sec => sec._id === sector._id)) {
       listedSectors.push(sector);
-      options.push(<option value={sector._id} name={sector._id} 
+      options.push(<option value={sector._id} name={sector._id} key={sector._id}
         style={{ marginLeft: parseInt(sector.level)*20}}>{sector.name}</option>);
       const children = sectors.filter(sec => sec.parent_id === sector._id);
       children.map(child => renderSectors(child))

@@ -1,6 +1,8 @@
 import mongoose from "mongoose";
 import connectDB from "../../../lib/mongodb";
 import User from "../../../models/user";
+import { withIronSessionApiRoute } from 'iron-session/next'
+import { sessionOptions } from '../../../lib/session';
 
 const handler = async (req, res) => {
   const { method } = req;
@@ -17,7 +19,10 @@ const handler = async (req, res) => {
       const formattedSectorIds = sector_ids.map(sec => new ObjectId(sec));
       let user = new User({ name, sector_ids: formattedSectorIds, terms });
       await user.save();
-      res.status(201).json({ message: "Data inserted successfully!" });
+      user.isLoggedIn = true;
+      req.session.user = user;
+      await req.session.save()
+      res.status(201).json({user, message: "Data inserted successfully!" });
       break
     default:
       res.setHeader('Allow', ['GET', 'POST'])
@@ -25,4 +30,4 @@ const handler = async (req, res) => {
   }
 }
 
-export default connectDB(handler);
+export default withIronSessionApiRoute(connectDB(handler), sessionOptions);
