@@ -7,7 +7,7 @@ var sector = new Schema({
     required: true
   },
   parent_id: {
-    type: mongoose.Types.ObjectId,
+    type: String,
     required: true
   },
   level: {

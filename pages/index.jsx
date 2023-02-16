@@ -39,7 +39,7 @@ export const getServerSideProps = withIronSessionSsr(async function ({
 
   if (user === undefined) {
     res.setHeader('location', '/users/create')
-    res.statusCode = 302
+    res.statusCode = 301
     res.end()
     return {
       props: {
