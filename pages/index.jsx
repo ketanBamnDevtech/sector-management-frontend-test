@@ -33,6 +33,7 @@ export const getServerSideProps = withIronSessionSsr(async function ({
   req,
   res,
 }) {
+  try {
   const user = req.session.user;
   const API_URL = process.env.API_URL;
 
@@ -55,5 +56,9 @@ export const getServerSideProps = withIronSessionSsr(async function ({
         props: { users: users },
     };
   }
+} catch (err) {
+  console.error(err);
+  return { notFound: true };
+}
 },
 sessionOptions)

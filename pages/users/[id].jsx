@@ -1,6 +1,7 @@
 import styles from '../../styles/Home.module.css'
 import FormComponent from '../../components/Form';
 import { useRouter } from 'next/router'
+import Sector from '../../models/sector';
 
 export default function EditUser( { sectors, user }) {
   const router = useRouter()
@@ -15,6 +16,7 @@ export default function EditUser( { sectors, user }) {
 }
 
 export async function getStaticPaths() {
+  try {
   const API_URL = process.env.API_URL;
   const response = await fetch(`${API_URL}/api/users`);
   const users = await response.json();
@@ -24,6 +26,10 @@ export async function getStaticPaths() {
   }))
 
   return { paths, fallback: false }
+  } catch (err) {
+    console.error(err);
+    return { paths: [], fallback: false }
+  }
 }
 
 export async function getStaticProps({ params }) {
@@ -38,5 +44,6 @@ export async function getStaticProps({ params }) {
     };
   } catch (e) {
     console.error(e);
+    return { notFound: true };
   }
 }

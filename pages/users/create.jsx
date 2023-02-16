@@ -25,5 +25,6 @@ export async function getStaticProps() {
     };
   } catch (e) {
     console.error(e);
+    return { notFound: true };
   }
 }
