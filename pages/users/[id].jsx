@@ -1,16 +1,11 @@
 import styles from '../../styles/Home.module.css'
 import FormComponent from '../../components/Form';
-import { useRouter } from 'next/router'
-import Sector from '../../models/sector';
 
 export default function EditUser( { sectors, user }) {
-  const router = useRouter()
-  const { id } = router.query
-
   return (
     <main className={styles.main}>
       <h2>Edit User</h2>
-      <FormComponent sectors={sectors} user={user} />
+      <FormComponent sectors={sectors} user={user} redirectTo={'/users/create'} />
     </main>
   )
 }
@@ -25,10 +20,10 @@ export async function getStaticPaths() {
     params: { id: user._id },
   }))
 
-  return { paths, fallback: false }
+  return { paths, fallback: "blocking" }
   } catch (err) {
     console.error(err);
-    return { paths: [], fallback: false }
+    return { paths: [], fallback: "blocking" }
   }
 }
 
@@ -40,7 +35,7 @@ export async function getStaticProps({ params }) {
     const userResponse = await fetch(`${API_URL}/api/users/${params.id}`);
     const user = await userResponse.json();
     return {
-        props: { sectors: sectors, user: user },
+        props: { sectors, user },
     };
   } catch (e) {
     console.error(e);

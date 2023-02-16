@@ -5,22 +5,23 @@ import Form from 'react-bootstrap/Form';
 import useUser from '../lib/hooks/useUser';
 import Router from 'next/router'
 
-const FormComponent = ({ sectors, user = undefined }) =>  {
+const FormComponent = ({ sectors, user = undefined, redirectTo = '', redirectIfFound = false }) =>  {
   const [message, setMessage] = useState(null);
   const [show, setShow] = useState(false);
   const [validated, setValidated] = useState(false);
-  const { mutateUser } = useUser();
-
+  const { mutateUser } = useUser({
+    redirectTo,
+    redirectIfFound
+  });
   const formRef = useRef(null);
   const listedSectors = [];
   const rootSectors = sectors?.filter(sector => sector.parent_id === "000000000000000000000000");
-
   useEffect(() => {
     if (user) {
       formRef.current.name.value = user.name;
       formRef.current.terms.checked = user.terms;
     }
-  }, [user])
+  }, )
 
   const handleSubmlt = async (event) => {
     try {
@@ -80,7 +81,7 @@ const FormComponent = ({ sectors, user = undefined }) =>  {
     }
     return options;
   }
-  
+
   return (
     <Form noValidate onSubmit={handleSubmlt} ref={formRef} validated={validated}>
       {show && <Alert variant="success" onClose={() => setShow(false)} dismissible>

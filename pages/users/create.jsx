@@ -1,12 +1,13 @@
 import styles from 'styles/Home.module.css'
 import FormComponent from '../../components/Form';
+import useUser from '../../lib/hooks/useUser';
 
 export default function CreateUser( { sectors }) {
-
+  const { user } = useUser();
   return (
     <main className={styles.main}>
       <h2>Create User</h2>
-      <FormComponent sectors={sectors} />
+      <FormComponent sectors={sectors} redirectTo = {`/users/${user?._id}`} redirectIfFound={true} />
     </main>
   )
 }

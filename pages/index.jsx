@@ -1,12 +1,13 @@
 import styles from '../styles/Home.module.css'
 import { Table } from 'react-bootstrap';
-import { withIronSessionSsr } from 'iron-session/next'
-import { sessionOptions } from '../lib/session';
+import useUser from '../lib/hooks/useUser';
 
 export default function Home( { users }) {
+  const { user } = useUser();
+
   return (
     <main className={styles.main}>
-      {users && <Table striped bordered hover variant='primary'>
+      {user?.isLoggedIn && <Table striped bordered hover variant='primary'>
         <thead>
           <tr>
             <th>Name</th>
@@ -25,40 +26,22 @@ export default function Home( { users }) {
         
         </tbody>
       </Table>}
+      { !user?.isLoggedIn && <h2>This is public page</h2>}
     </main>
   )
 }
 
-export const getServerSideProps = withIronSessionSsr(async function ({
-  req,
-  res,
-}) {
+export async function getStaticProps() {
   try {
-  const user = req.session.user;
   const API_URL = process.env.API_URL;
 
-  if (user === undefined) {
-    res.setHeader('location', '/users/create')
-    res.statusCode = 301
-    res.end()
-    return {
-      props: {
-        user: { isLoggedIn: false },
-      },
-    }
-  } else {
-    const response = await fetch(`${API_URL}/api/users`, { method: 'GET'}, { headers: {
-      "Content-Type": 
-      "application/json",
-    }});
+    const response = await fetch(`${API_URL}/api/users`);
     const users = await response.json();
     return {
         props: { users: users },
     };
+  } catch (err) {
+    console.error(err);
+    return { notFound: true };
   }
-} catch (err) {
-  console.error(err);
-  return { notFound: true };
 }
-},
-sessionOptions)
